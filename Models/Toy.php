@@ -1,7 +1,7 @@
 <?php
     include_once __DIR__ . '/Product.php';
 
-    class Food extends Product{
+    class Toy extends Product{
         protected $material;
         protected $color;
 
@@ -16,7 +16,7 @@
          * 
          */
 
-        public function __construct($_name, $_price, $_category, $_material, $_color,){
+        public function __construct($_name, $_price, $_category, $_material, $_color){
             parent::__construct($_name, $_price, $_category);
             $this->material = $_material;
             $this->color = $_color;

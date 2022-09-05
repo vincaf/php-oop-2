@@ -16,7 +16,7 @@
          * 
          */
 
-        public function __construct($_name, $_price, $_category, $_expirationDate, $_ingredients,){
+        public function __construct($_name, $_price, $_category, $_expirationDate, $_ingredients){
             parent::__construct($_name, $_price, $_category);
             $this->expirationDate = $_expirationDate;
             $this->ingredients = $_ingredients;
