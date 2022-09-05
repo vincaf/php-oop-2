@@ -5,6 +5,17 @@
         protected $expirationDate;
         protected $ingredients;
 
+        /**
+         * Create a new istance of a User object
+         * 
+         * @param [string] $_name
+         * @param [int] $_price
+         * @param [string] $_category
+         * @param [string] $_expirationDate
+         * @param [string] $_ingredients
+         * 
+         */
+
         public function __construct($_name, $_price, $_category, $_expirationDate, $_ingredients,){
             parent::__construct($_name, $_price, $_category);
             $this->expirationDate = $_expirationDate;

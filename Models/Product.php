@@ -4,6 +4,15 @@
         protected $price;
         protected $category;
 
+        /**
+         * Create a new istance of a User object
+         * 
+         * @param [string] $_name
+         * @param [int] $_price
+         * @param [string] $_category
+         * 
+         */
+
         public function __construct($_name, $_price, $_category){
             $this->name = $_name;
             $this->price = $_price;

@@ -9,6 +9,15 @@
         protected $items;
         protected $totalAmount = 0;
 
+        /**
+         * Create a new istance of a User object
+         * 
+         * @param [string] $_name
+         * @param [string] $_surname
+         * @param [string] $_address
+         * 
+         */
+
         public function __construct($_name, $_surname, $_address){
             $this->name = $_name;
             $this->surname = $_surname;

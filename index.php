@@ -8,9 +8,8 @@
 </head>
 <body>
     
-    <php? 
+    <?php 
 
-    
 
     ?>
 </body>

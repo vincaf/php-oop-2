@@ -6,6 +6,15 @@
         protected $expirationDate;
         protected $cvv;
 
+        /**
+         * Create a new istance of a User object
+         * 
+         * @param [int] $_cardNumber
+         * @param [int] $_expirationDate
+         * @param [int] $_cvv
+         * 
+         */
+
         public function __construct($_cardNumber, $_expirationDate, $_cvv){
             $this->cardNumber = $_cardNumber;
             $this->setExpirationDate($_expirationDate);

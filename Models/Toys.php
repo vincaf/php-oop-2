@@ -5,6 +5,17 @@
         protected $material;
         protected $color;
 
+        /**
+         * Create a new istance of a User object
+         * 
+         * @param [string] $_name
+         * @param [int] $_price
+         * @param [string] $_category
+         * @param [string] $_material
+         * @param [string] $_color
+         * 
+         */
+
         public function __construct($_name, $_price, $_category, $_material, $_color,){
             parent::__construct($_name, $_price, $_category);
             $this->material = $_material;
