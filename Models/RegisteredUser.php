@@ -17,8 +17,8 @@
          * 
          */
 
-        public function __construct($_username, $_password, $_name, $_surname, $_address){
-            parent::__construct($_name, $_surname, $_address);
+        public function __construct($_username, $_password, $_name, $_surname, $_address, $paymentCard){
+            parent::__construct($_name, $_surname, $_address, $paymentCard);
             $this->username = $_username;
             $this->password = $_password;
         }

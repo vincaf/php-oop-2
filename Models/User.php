@@ -8,6 +8,7 @@
         protected $discount = 0;
         protected $items;
         protected $totalAmount = 0;
+        protected $paymentCard;
 
         /**
          * Create a new istance of a User object
@@ -15,13 +16,15 @@
          * @param [string] $_name
          * @param [string] $_surname
          * @param [string] $_address
+         * @param [object] $_paymentCard
          * 
          */
 
-        public function __construct($_name, $_surname, $_address){
+        public function __construct($_name, $_surname, $_address, $paymentCard){
             $this->name = $_name;
             $this->surname = $_surname;
             $this->address = $_address;
+            $this->paymentCard = $paymentCard;
         }
 
         public function getName(){
@@ -36,6 +39,10 @@
             return $this->address;
         }
 
+        public function getPaymentCard(){
+            return $this->PaymentCard;
+        }
+
         public function setName($_name){
             $this->name = $_name;
         }
@@ -46,6 +53,10 @@
 
         public function setAddress($_address){
             $this->address = $_address;
+        }
+
+        public function setPaymentCard($_paymentCard){
+            $this->paymentCard = $_paymentCard;
         }
 
         public function getCart(){
