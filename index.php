@@ -14,9 +14,13 @@
         include_once __DIR__ . "./Models/RegisteredUser.php";
         include_once __DIR__ . "./Models/CreditCard.php";
         include_once __DIR__ . "./Models/Product.php";
-        include_once __DIR__ . "./Models/Toys.php";
+        include_once __DIR__ . "./Models/Toy.php";
         include_once __DIR__ . "./Models/Food.php";
 
+        $user1 = new User("Paolo", "Bitta", "Via Delle Città, Milano");
+        var_dump($user1);
+        $user2 = new RegisteredUser("luca85", "ladirezione", "Luca", "Nervi", "Via Della Vespa, Milano");
+        var_dump($user2);
 
     ?>
 </body>
