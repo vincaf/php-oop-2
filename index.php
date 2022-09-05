@@ -22,6 +22,11 @@
         $user2 = new RegisteredUser("luca85", "ladirezione", "Luca", "Nervi", "Via Della Vespa, Milano");
         var_dump($user2);
 
+        $creditCard1 = new CreditCard("1111-2222-3333-4444", "10-27", "000");
+        var_dump($creditCard1);
+        $creditCard2 = new CreditCard("2222-3333-4444-5555", "12-24", "222");
+        var_dump($creditCard2);
+
     ?>
 </body>
 </html>
