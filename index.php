@@ -8,7 +8,14 @@
 </head>
 <body>
     
-    <?php 
+    <?php
+    
+        include_once __DIR__ . "./Models/User.php";
+        include_once __DIR__ . "./Models/RegisteredUser.php";
+        include_once __DIR__ . "./Models/CreditCard.php";
+        include_once __DIR__ . "./Models/Product.php";
+        include_once __DIR__ . "./Models/Toys.php";
+        include_once __DIR__ . "./Models/Food.php";
 
 
     ?>
