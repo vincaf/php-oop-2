@@ -6,6 +6,8 @@
         protected $address;
         protected $cart = [];
         protected $discount = 0;
+        protected $items;
+        protected $totalAmount = 0;
 
         public function __construct($_name, $_surname, $_address){
             $this->name = $_name;
@@ -51,5 +53,21 @@
 
         public function setDiscount($_discount){
             $this->discount = $_discount;
+        }
+
+        public function getItems(){
+            return $this->items;
+        }
+
+        public function getTotalPrice(){
+            foreach ($this->items as $item) {
+                $this->totalAmount += $item->getPrice();
+            }
+            return $this->totalAmount;
+        }
+
+        public function addDiscount($totalAmount, $discount){
+            $this->totalAmount-$discount;
+            return $this->totalAmount;
         }
     }
